@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Setup Coredata
+        MagicalRecord.setupCoreDataStackWithAutoMigratingSqliteStoreNamed("sample");
+        
+        RLMRealm.setSchemaVersion(3, forRealmAtPath: RLMRealm.defaultRealmPath(),
+            withMigrationBlock: { migration, oldSchemaVersion in
+        })
+        
         return true
     }
 

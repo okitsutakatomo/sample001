@@ -23,7 +23,13 @@ class sample001Tests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        self.measureBlock { () -> Void in
+            XCTAssert(true, "Pass")
+        }
+    }
+    
+    func testRealm() {
+//        RealmPerformance.saveUser1million()
     }
     
     func testPerformanceExample() {

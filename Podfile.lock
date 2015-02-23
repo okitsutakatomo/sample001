@@ -1,0 +1,27 @@
+PODS:
+  - MagicalRecord (2.3.0-beta.5):
+    - MagicalRecord/Core (= 2.3.0-beta.5)
+  - MagicalRecord/Core (2.3.0-beta.5)
+  - Realm (0.90.5):
+    - Realm/Headers (= 0.90.5)
+  - Realm/Headers (0.90.5)
+
+DEPENDENCIES:
+  - MagicalRecord (from `https://github.com/magicalpanda/MagicalRecord`, tag `v2.3.0-beta.5`)
+  - Realm
+
+EXTERNAL SOURCES:
+  MagicalRecord:
+    :git: https://github.com/magicalpanda/MagicalRecord
+    :tag: v2.3.0-beta.5
+
+CHECKOUT OPTIONS:
+  MagicalRecord:
+    :git: https://github.com/magicalpanda/MagicalRecord
+    :tag: v2.3.0-beta.5
+
+SPEC CHECKSUMS:
+  MagicalRecord: 5b7e807bc07c5d642af1f7d894b7fe0d3c317ca2
+  Realm: aea25534b97be77995650c2339aa6ed010dfcc8a
+
+COCOAPODS: 0.36.0.beta.2
